@@ -42,10 +42,10 @@ flutter:
     - assets/images/
     - assets/images/virus.png
 
-fonts:
-  - family: Baloo
-    fonts:
-      - asset: assets/fonts/Baloo2-Regular.ttf
-      - asset: assets/fonts/Baloo2-Bold.ttf
-      - asset: assets/fonts/Baloo2-Bold.ttf
-      - asset: assets/fonts/Baloo2-SemiBold.ttf
+  fonts:
+    - family: Baloo
+      fonts:
+        - asset: assets/fonts/Baloo2-Regular.ttf
+        - asset: assets/fonts/Baloo2-Bold.ttf
+        - asset: assets/fonts/Baloo2-Bold.ttf
+        - asset: assets/fonts/Baloo2-SemiBold.ttf

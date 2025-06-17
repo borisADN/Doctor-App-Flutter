@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Doctor App',
       theme: ThemeData(
         fontFamily: "Baloo",
         primarySwatch: Colors.blue,
