@@ -1,5 +1,5 @@
 import 'package:application/presentation/doctor_app.dart';
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 
 void main() {

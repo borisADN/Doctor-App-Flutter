@@ -1,4 +1,4 @@
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 

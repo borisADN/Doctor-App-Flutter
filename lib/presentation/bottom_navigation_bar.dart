@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:application/constants.dart';
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigation extends StatelessWidget {
@@ -10,7 +10,7 @@ class BottomNavigation extends StatelessWidget {
   final int selectedIndex;
   final Function(int) onItemPressed;
   const BottomNavigation({
-    required Key key,
+    super.key,
     required this.itemIcons,
     required this.centerIcon,
     required this.selectedIndex,
@@ -19,7 +19,7 @@ class BottomNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: getRelativeHeight(0.1),
       child: Stack(
         children: [
@@ -29,8 +29,9 @@ class BottomNavigation extends StatelessWidget {
               height: getRelativeHeight(0.07),
               color: Colors.white,
               child: Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: getRelativeWidth(0.1)),
+                padding: EdgeInsets.symmetric(
+                  horizontal: getRelativeWidth(0.1),
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -45,9 +46,10 @@ class BottomNavigation extends StatelessWidget {
                             },
                             child: Icon(
                               itemIcons[0],
-                              color: selectedIndex == 0
-                                  ? kPrimaryDarkColor
-                                  : kLightTextColor,
+                              color:
+                                  selectedIndex == 0
+                                      ? kPrimaryDarkColor
+                                      : kLightTextColor,
                               size: getRelativeWidth(0.07),
                             ),
                           ),
@@ -57,9 +59,10 @@ class BottomNavigation extends StatelessWidget {
                             },
                             child: Icon(
                               itemIcons[1],
-                              color: selectedIndex == 1
-                                  ? kPrimaryDarkColor
-                                  : kLightTextColor,
+                              color:
+                                  selectedIndex == 1
+                                      ? kPrimaryDarkColor
+                                      : kLightTextColor,
                             ),
                           ),
                         ],
@@ -77,9 +80,10 @@ class BottomNavigation extends StatelessWidget {
                             },
                             child: Icon(
                               itemIcons[2],
-                              color: selectedIndex == 2
-                                  ? kPrimaryDarkColor
-                                  : kLightTextColor,
+                              color:
+                                  selectedIndex == 2
+                                      ? kPrimaryDarkColor
+                                      : kLightTextColor,
                             ),
                           ),
                           GestureDetector(
@@ -88,9 +92,10 @@ class BottomNavigation extends StatelessWidget {
                             },
                             child: Icon(
                               itemIcons[3],
-                              color: selectedIndex == 3
-                                  ? kPrimaryDarkColor
-                                  : kLightTextColor,
+                              color:
+                                  selectedIndex == 3
+                                      ? kPrimaryDarkColor
+                                      : kLightTextColor,
                             ),
                           ),
                         ],
@@ -112,34 +117,32 @@ class BottomNavigation extends StatelessWidget {
                       BoxShadow(
                         blurRadius: 25,
                         offset: Offset(0, 5),
-                        color: kPrimaryDarkColor.withOpacity(0.75),
-                      )
+                        color: kPrimaryDarkColor.withValues(alpha: 0.75),
+                      ),
                     ],
                     borderRadius: BorderRadius.all(Radius.circular(18)),
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [
-                        kPrimarylightColor,
-                        kPrimaryDarkColor,
-                      ],
+                      colors: [kPrimarylightColor, kPrimaryDarkColor],
                     ),
                   ),
                   height: getRelativeWidth(0.135),
                   width: getRelativeWidth(0.135),
                   child: Center(
-                      child: Transform.rotate(
-                    angle: math.pi / 4,
-                    child: Icon(
-                      centerIcon,
-                      color: Colors.white,
-                      size: getRelativeWidth(0.07),
+                    child: Transform.rotate(
+                      angle: math.pi / 4,
+                      child: Icon(
+                        centerIcon,
+                        color: Colors.white,
+                        size: getRelativeWidth(0.07),
+                      ),
                     ),
-                  )),
+                  ),
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

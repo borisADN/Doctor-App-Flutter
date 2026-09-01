@@ -1,5 +1,5 @@
 import 'package:application/constants.dart';
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 
 class DoctorBanner extends StatelessWidget {

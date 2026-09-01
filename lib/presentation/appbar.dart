@@ -1,4 +1,4 @@
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 
 class DoctorAppBar extends StatelessWidget {
@@ -15,7 +15,7 @@ class DoctorAppBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Salut, Lazare",
+                "Salut, Boris",
                 style: TextStyle(
                   fontFamily: "Baloo",
                   color: Colors.black,
@@ -49,7 +49,7 @@ class DoctorAppBar extends StatelessWidget {
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(5),
-              child: Image.asset("assets/images/person.png"),
+              child: Image.asset("assets/images/profile.jpg"),
             ),
           ),
         ],

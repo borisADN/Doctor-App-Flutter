@@ -1,9 +1,9 @@
 import 'package:application/constants.dart';
 import 'package:application/data/data.dart';
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:line_icons/line_icons.dart';
 
 class DoctorsList extends StatelessWidget {
   const DoctorsList({required Key key}) : super(key: key);
@@ -206,7 +206,8 @@ class DoctorsList extends StatelessWidget {
                             ),
                             padding: EdgeInsets.all(getRelativeWidth(0.015)),
                             child: Icon(
-                              FontAwesomeIcons.facebookMessenger,
+                              //messenger social icon
+                              LineIcons.facebookMessenger,
                               color: color,
                               size: getRelativeWidth(0.055),
                             ),

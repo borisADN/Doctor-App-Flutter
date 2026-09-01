@@ -5,7 +5,7 @@ import 'package:application/presentation/bottom_navigation_bar.dart';
 import 'package:application/presentation/categories_list.dart';
 import 'package:application/presentation/doctors_list.dart';
 import 'package:application/presentation/search_field.dart';
-import 'package:application/size_confige.dart';
+import 'package:application/size_config.dart';
 import 'package:flutter/material.dart';
 
 class DoctorScreen extends StatefulWidget {
